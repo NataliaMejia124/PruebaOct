@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ListarComponent } from './usuario/listar/listar.component';
 import { AddComponent } from './usuario/add/add.component';
 import { EditComponent } from './usuario/edit/edit.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ServiceService} from '../app/Service/service.service';
 import {HttpClientModule} from '@angular/common/http';
 
@@ -18,6 +18,7 @@ import {HttpClientModule} from '@angular/common/http';
     EditComponent
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,

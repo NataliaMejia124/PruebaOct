@@ -1,1 +1,25 @@
-<p>add works!</p>
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <h3>Usuario:</h3>
+    </div>
+    <div card="card-body"></div>
+    <form [formGroup]="userform" (ngSubmit)="Guardar()">
+      <div class="form-group">
+        <label for="">Rol:</label>
+        <input type="number" class="form-control" formControlName="rol">
+      </div>
+      <div class="form-group">
+        <label for="">Nombre:</label>
+        <input type="text" class="form-control" formControlName="nombre">
+      </div>
+      <div class="form-group">
+        <label for="">Activo</label>
+        <input type="text" class="form-control" formControlName="activo">
+      </div>
+      <button type="submit" class="btn btn-danger">Guardar</button>
+    </form>
+
+  </div>
+</div>
+

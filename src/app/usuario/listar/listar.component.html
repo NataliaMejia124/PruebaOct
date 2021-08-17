@@ -14,15 +14,14 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngfor="let usuario of usuarios"class="text-center">
+          <tr *ngFor="let usuario of usuarios" class="text-center">
             <td>{{usuario.id_usuario}}</td>
             <td>{{usuario.id_rol}}</td>
-            <td></td>
-            <td></td>
+            <td>{{usuario.nombre}}</td>
+            <td>{{usuario.activo}}</td>
             <td>
-              <button class="btn btn-warning">Editar</button>
-              <button class="btn btn-danger">Eliminar</button>
-
+              <button (click)="Editar(usuario)"class="btn btn-warning m-2">Editar</button>
+              <button (click)="Delete(usuario)"class="btn btn-danger">Eliminar</button>
             </td>
           </tr>
         </tbody>
